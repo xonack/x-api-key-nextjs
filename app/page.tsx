@@ -42,7 +42,7 @@ export default function Home() {
       <p className="mt-9 text-center">This website uses your twitter credentials to generate an api key - the api key can be used to access your account remotely.</p>
       <p className="mt-9 text-center"><strong>If you ever want to invalidate this key, just change your password.</strong></p>
       <p className="text-center">Avoid generating too many keys or X will consider it spam.</p>
-      <p className="mt-9 text-center">No one of this is stored if you don't store it.</p>
+      <p className="mt-9 text-center">No one is storing this if you don't store it.</p>
       <p className="mt-9 mb-9 text-center">(don't take my word for it - read the website code <a href="https://github.com/xonack/x-api-key-nextjs"><u>here</u></a>)</p>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
