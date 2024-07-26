@@ -29,7 +29,9 @@ export default function Home() {
         throw new Error(data.error || 'Failed to get API key');
       }
     } catch (error) {
+      setApiKey('Error getting API key:'+ error);
       console.error('Error getting API key:', error);
+
     }
   };
 
