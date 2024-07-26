@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <div className="container mt-9 mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-4 text-center">Get X API Key</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center">Get Your X API Key</h1>
       <p className="mt-9 text-center"><strong>Fill out the form below to get your API key.</strong></p>
       <p className="mt-9 text-center">This website uses your twitter credentials to generate an api key - the api key can be used to access your account remotely.</p>
       <p className="mt-9 text-center"><strong>If you ever want to invalidate this key, just change your password.</strong></p>
