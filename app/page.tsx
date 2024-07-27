@@ -29,7 +29,7 @@ export default function Home() {
         throw new Error(data.error || 'Failed to get API key');
       }
     } catch (error) {
-      setApiKey('Error getting API key: '+ error);
+      setApiKey('Error - check your credentials: '+ error);
       console.error('Error getting API key:', error);
 
     }
@@ -46,7 +46,7 @@ export default function Home() {
       <p className="mt-9 mb-9 text-center">(don't take my word for it - read the website code <a href="https://github.com/xonack/x-api-key-nextjs"><u>here</u></a>)</p>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="username" className="block mb-1">Username:</label>
+          <label htmlFor="username" className="block mb-1">Username (without "@"):</label>
           <input
             type="text"
             id="username"

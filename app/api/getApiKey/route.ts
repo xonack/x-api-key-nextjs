@@ -10,6 +10,6 @@ export async function POST(request: Request) {
     const apiKey: string = await rettiwt.auth.login(email, username, password);
     return NextResponse.json({ apiKey });
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to get API key' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to get API key: ' + error }, { status: 500 });
   }
 }
